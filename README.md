@@ -5,6 +5,11 @@ In mathematics and computer science, an **algorithm** is a finite sequence of ri
 
 [^wiki]: [Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Algorithm)
 
+## Combinatorial Algorithms
+- Sequences
+  - Search
+    - [Binary Search](Combinatorial/Sequences/Search/Binary%20Search.md)
+
 ## [Numerical Analysis](Numerical%20Analysis/README.md)
 - [Order of Convergence](Numerical%20Analysis/Order%20of%20Convergence.md)
 - Root Finding
