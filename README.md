@@ -1,14 +1,10 @@
-# Algorithms
-In mathematics and computer science, an **algorithm** is a finite sequence of rigorous instructions, typically used to solve a class of specific problems or to perform a computation.[^wiki]
+# Computational Mathematics
+## [Algorithms](Algorithms/README.md)
+### Sequence Algorithms
+- Search
+  - [Binary Search](Algorithms/Sequences/Search/Binary%20Search.md)
 
-[List of algorithms](https://en.wikipedia.org/wiki/List_of_algorithms)
-
-[^wiki]: [Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Algorithm)
-
-## Combinatorial Algorithms
-- Sequences
-  - Search
-    - [Binary Search](Combinatorial/Sequences/Search/Binary%20Search.md)
+### Graph Algorithms
 
 ## [Numerical Analysis](Numerical%20Analysis/README.md)
 - [Order of Convergence](Numerical%20Analysis/Order%20of%20Convergence.md)
