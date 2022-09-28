@@ -22,3 +22,9 @@ In mathematics and computer science, an **algorithm** is a finite sequence of ri
   - [Lower-Upper Decomposition](Numerical%20Analysis/Numerical%20Linear%20Algebra/Lower-Upper%20Decomposition.md)
   - [Jacobi Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Jacobi%20Method.md)
   - [Gauss-Seidel Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gauss-Seidel%20Method.md)
+
+## Tools
+### [MATLAB](Tools/MATLAB/README.md)
+- [Built-ins](Tools/MATLAB/Built-ins.md)
+- [Matrices](Tools/MATLAB/Matrices.md)
+- [Functions](Tools/MATLAB/Functions.md)
