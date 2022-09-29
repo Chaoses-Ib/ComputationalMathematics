@@ -8,5 +8,5 @@
   pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool.
 - [SymPy](https://www.sympy.org/) ([GitHub](https://github.com/sympy/sympy))  
   SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.
-- [SegaMath](https://www.sagemath.org/) ([GitHub](https://github.com/sagemath/sage))  
+- [SegaMath](SageMath/README.md) ([Homepage](https://www.sagemath.org/), [GitHub](https://github.com/sagemath/sage))  
   Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.

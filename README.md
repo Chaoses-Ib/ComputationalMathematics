@@ -20,6 +20,7 @@
   - [Gauss-Seidel Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gauss-Seidel%20Method.md)
 
 ## [Libraries](Libraries/README.md)
+### [SageMath](Libraries/SageMath/README.md)
 
 ## Tools
 - [Jupyter](https://jupyter.org/)
