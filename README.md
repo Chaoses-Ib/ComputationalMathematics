@@ -19,7 +19,11 @@
   - [Jacobi Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Jacobi%20Method.md)
   - [Gauss-Seidel Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gauss-Seidel%20Method.md)
 
+## [Libraries](Libraries/README.md)
+
 ## Tools
+- [Jupyter](https://jupyter.org/)
+
 ### [MATLAB](Tools/MATLAB/README.md)
 - [Built-ins](Tools/MATLAB/Built-ins.md)
 - [Matrices](Tools/MATLAB/Matrices.md)
