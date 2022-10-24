@@ -21,8 +21,11 @@
 
 ## [Libraries](Libraries/README.md)
 ### [SageMath](Libraries/SageMath/README.md)
+- [Installation](Libraries/SageMath/Installation.md)
+- [Python](Libraries/SageMath/Python.md)
 
 ## Tools
+- [WolframAlpha: Computational Intelligence](https://www.wolframalpha.com/)
 - [Jupyter](https://jupyter.org/)
 
 ### [MATLAB](Tools/MATLAB/README.md)
