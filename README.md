@@ -18,6 +18,9 @@
   - [Lower-Upper Decomposition](Numerical%20Analysis/Numerical%20Linear%20Algebra/Lower-Upper%20Decomposition.md)
   - [Jacobi Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Jacobi%20Method.md)
   - [Gauss-Seidel Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gauss-Seidel%20Method.md)
+- [Numerical Integration](Numerical%20Analysis/Numerical%20Integration/README.md)
+  - [Quadrature Rules Based on Interpolating Functions](Numerical%20Analysis/Numerical%20Integration/Interpolating.md)
+  - [Adaptive Quadrature](Numerical%20Analysis/Numerical%20Integration/Adaptive%20Quadrature.md)
 
 ## [Libraries](Libraries/README.md)
 ### [SageMath](Libraries/SageMath/README.md)
