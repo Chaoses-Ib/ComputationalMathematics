@@ -23,6 +23,8 @@
 - [Numerical Integration](Numerical%20Analysis/Numerical%20Integration/README.md)
   - [Quadrature Rules Based on Interpolating Functions](Numerical%20Analysis/Numerical%20Integration/Interpolating.md)
   - [Adaptive Quadrature](Numerical%20Analysis/Numerical%20Integration/Adaptive%20Quadrature.md)
+- Differential Equations
+  - [Euler Method](Numerical%20Analysis/Differential%20Equations/Euler%20Method.md)
 
 ## [Libraries](Libraries/README.md)
 ### [SageMath](Libraries/SageMath/README.md)
