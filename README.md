@@ -30,6 +30,9 @@
 ### [SageMath](Libraries/SageMath/README.md)
 - [Installation](Libraries/SageMath/Installation.md)
 - [Python](Libraries/SageMath/Python.md)
+- Symbolic Computation
+  - [Symbolic Expressions](Libraries/SageMath/Symbolic/Expressions.md)
+  - [Symbolic Functions](Libraries/SageMath/Symbolic/Functions.md)
 
 ## Tools
 - [WolframAlpha: Computational Intelligence](https://www.wolframalpha.com/)

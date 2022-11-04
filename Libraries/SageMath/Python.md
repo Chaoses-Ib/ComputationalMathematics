@@ -4,6 +4,9 @@
 ## [Standalone Python/Sage scripts](https://doc.sagemath.org/html/en/tutorial/programming.html#standalone-python-sage-scripts)
 ```python
 from sage.all import *
+
+# Sage predefines `x` to be a global indeterminate.
+x = var('x')
 ```
 
 ## [Pre-parser](https://doc.sagemath.org/html/en/tutorial/afterword.html#the-pre-parser-differences-between-sage-and-python)
@@ -14,26 +17,4 @@ Sage pre-parses all command lines before passing them to Python:
 - Replacing instances of `^` that are not in strings with `**`
 
   The bitwise xor operator in Sage is `^^`.
-
-## [Functions](https://doc.sagemath.org/html/en/tutorial/tour_functions.html)
-- Python function
-  ```python
-  def f(z): return z^2
-  ```
-  These functions can be plotted, but not differentiated or integrated.
-
-  Convert `f()` to a symbolic expression:
-  ```python
-  var('z')
-  f(z)
-  ```
-- Callable symbolic expression
-  ```python
-  g(x) = x^2
-  ```
-  These can be plotted, differentiated, and integrated.
-- Pre-defined Sage ‘calculus function’
-  ```python
-  sin
-  ```
-  These can be plotted, and with a little help, differentiated, and integrated.
+- [Callable symbolic expression](Symbolic/Expressions.md#callable-symbolic-expressions) variable assignment statement: `FUNCTION(*args) = Expression`
