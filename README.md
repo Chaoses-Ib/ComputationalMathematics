@@ -14,16 +14,18 @@
   - [Fixed-Point Iteration](Numerical%20Analysis/Root%20Finding/Fixed-Point%20Iteration.md)
   - [Newton's Method](Numerical%20Analysis/Root%20Finding/Newton's%20Method.md)
   - [Secant Method](Numerical%20Analysis/Root%20Finding/Secant%20Method.md)
-- [Numerical Optimization](Numerical%20Analysis/Numerical%20Optimization/README.md)
-  - [Bracketing Search Methods](Numerical%20Analysis/Numerical%20Optimization/Bracketing%20Search%20Methods.md)
 - Numerical Linear Algebra
   - [Gaussian Elimination](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gaussian%20Elimination.md)
   - [Lower-Upper Decomposition](Numerical%20Analysis/Numerical%20Linear%20Algebra/Lower-Upper%20Decomposition.md)
   - [Jacobi Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Jacobi%20Method.md)
   - [Gauss-Seidel Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gauss-Seidel%20Method.md)
+- Interpolation
+  - [Polynomial Interpolation](Numerical%20Analysis/Interpolation/Polynomial%20Interpolation.md)
 - [Numerical Integration](Numerical%20Analysis/Numerical%20Integration/README.md)
   - [Quadrature Rules Based on Interpolating Functions](Numerical%20Analysis/Numerical%20Integration/Interpolating.md)
   - [Adaptive Quadrature](Numerical%20Analysis/Numerical%20Integration/Adaptive%20Quadrature.md)
+- [Numerical Optimization](Numerical%20Analysis/Numerical%20Optimization/README.md)
+  - [Bracketing Search Methods](Numerical%20Analysis/Numerical%20Optimization/Bracketing%20Search%20Methods.md)
 - Differential Equations
   - [Euler Method](Numerical%20Analysis/Differential%20Equations/Euler%20Method.md)
 
