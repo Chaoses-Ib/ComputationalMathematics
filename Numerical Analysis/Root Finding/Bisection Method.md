@@ -33,3 +33,32 @@ $$
 
 令 ${b-a \over 2^{k+1}} \le \epsilon$，得 $k \ge \log_2{{b-a \over \epsilon}-1}$，即
 $$k=\lceil\log_2{b-a \over \epsilon}\rceil-1$$
+
+## 实现
+Sage 实现：
+```python
+def bisection_method(f, a, b, eps):
+    x = (a + b) / 2
+    if b - a < 2*eps:
+        return x
+    if f(x=a) * f(x=x) < 0:
+        return bisection_method(f, a, x, eps)
+    else:
+        return bisection_method(f, x, b, eps)
+```
+
+优化实现：
+```python
+def bisection_method(f, a, b, eps):
+    fa = f(x=a)
+    while b - a >= 2*eps:
+        x = (a + b) / 2
+        fx = f(x=x)
+        if fa * fx < 0:
+            b = x
+        else:
+            a = x
+            fa = fx
+    return (a + b) / 2
+```
+相较于每次迭代需要对 $f(x)$ 进行两次求值的递归实现，优化实现每次迭代只需要对 $f(x)$ 进行一次求值。

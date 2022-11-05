@@ -28,3 +28,16 @@ $$x^\* \approx x_k-{f(x_k) \over f'(x_k)}$$
 - $\phi(x)=x-m{f(x)\over f'(x)}$
 - $\mu(x)={f(x)\over f'(x)},\phi(x)=x-{\mu(x)\over\mu'(x)}$  
   $x^\*$ 是 $\mu(x)$ 的单重根
+
+## 实现
+Sage 实现：
+```python
+def newtons_method(f, x0, eps):
+    dfdx = f.diff(x)
+    while True:
+        x1 = x0 - f(x=x0) / dfdx(x=x0)
+        if abs(x1 - x0) < eps:
+            break
+        x0 = x1
+    return x1
+```

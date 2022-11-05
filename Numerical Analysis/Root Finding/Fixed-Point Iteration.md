@@ -14,3 +14,15 @@ $$x_{k+1}=g(x_k)$$
 
 ## Order of convergence
 线性收敛
+
+## 实现
+Sage 实现：
+```python
+def fixed_point_iter(g, x0, eps, max_iteration):
+    for _ in range(max_iteration):
+        x1 = g(x=x0)
+        if abs(x1 - x0) < eps:
+            break
+        x0 = x1
+    return x1
+```

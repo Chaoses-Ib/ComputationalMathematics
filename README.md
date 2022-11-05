@@ -13,6 +13,7 @@
   - [Method of False Position](Numerical%20Analysis/Root%20Finding/Method%20of%20False%20Position.md)
   - [Fixed-Point Iteration](Numerical%20Analysis/Root%20Finding/Fixed-Point%20Iteration.md)
   - [Newton's Method](Numerical%20Analysis/Root%20Finding/Newton's%20Method.md)
+  - [Secant Method](Numerical%20Analysis/Root%20Finding/Secant%20Method.md)
 - [Numerical Optimization](Numerical%20Analysis/Numerical%20Optimization/README.md)
   - [Bracketing Search Methods](Numerical%20Analysis/Numerical%20Optimization/Bracketing%20Search%20Methods.md)
 - Numerical Linear Algebra
