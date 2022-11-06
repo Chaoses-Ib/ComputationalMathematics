@@ -29,6 +29,7 @@
   - [Bracketing Search Methods](Numerical%20Analysis/Numerical%20Optimization/Bracketing%20Search%20Methods.md)
 - Differential Equations
   - [Euler Method](Numerical%20Analysis/Differential%20Equations/Euler%20Method.md)
+  - [Runge-Kutta Methods](Numerical%20Analysis/Differential%20Equations/Runge-Kutta%20Methods.md)
 
 ## [Libraries](Libraries/README.md)
 ### [SageMath](Libraries/SageMath/README.md)
