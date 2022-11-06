@@ -17,8 +17,7 @@
 - Numerical Linear Algebra
   - [Gaussian Elimination](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gaussian%20Elimination.md)
   - [Lower-Upper Decomposition](Numerical%20Analysis/Numerical%20Linear%20Algebra/Lower-Upper%20Decomposition.md)
-  - [Jacobi Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Jacobi%20Method.md)
-  - [Gauss-Seidel Method](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gauss-Seidel%20Method.md)
+  - [Jacobi Methods](Numerical%20Analysis/Numerical%20Linear%20Algebra/Jacobi%20Methods.md)
 - Interpolation
   - [Polynomial Interpolation](Numerical%20Analysis/Interpolation/Polynomial%20Interpolation.md)
 - [Numerical Integration](Numerical%20Analysis/Numerical%20Integration/README.md)
