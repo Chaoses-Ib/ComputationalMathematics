@@ -20,3 +20,22 @@ def euler(f, a, ya, h, b):
         table[k] = a + k * h, table[k-1][1] + h * f(x=table[k-1][0], y=table[k-1][1])
     return table
 ```
+
+## Improved Euler method
+**Improved Euler method (Heun's method, explicit trapezoidal rule)**
+
+$$y_{k+1} = y_k + {h \over 2}(f(x_k, y_k) + f(x_{k+1}, y_k+hf(x_k,y_k)))$$
+
+### Implementation
+Sage implementation:
+```python
+def improved_euler(f, a, ya, b, M):
+    h = (b - a) / M
+    table = matrix(RR, M + 1, 2)
+    table[0] = a, ya
+    for k in range(1, M + 1):
+        xk, yk = table[k - 1][0], table[k - 1][1]
+        fx = f(x=xk, y=yk)
+        table[k] = a + k * h, yk + h / 2 * (fx + f(x=a + k * h, y=yk + h * fx))
+    return table
+```
