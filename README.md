@@ -20,6 +20,8 @@
   - [Jacobi Methods](Numerical%20Analysis/Numerical%20Linear%20Algebra/Jacobi%20Methods.md)
 - Interpolation
   - [Polynomial Interpolation](Numerical%20Analysis/Interpolation/Polynomial%20Interpolation.md)
+- Curve Fitting
+  - [Least Squares](Numerical%20Analysis/Curve%20Fitting/Least%20Squares.md)
 - [Numerical Integration](Numerical%20Analysis/Numerical%20Integration/README.md)
   - [Quadrature Rules Based on Interpolating Functions](Numerical%20Analysis/Numerical%20Integration/Interpolating.md)
   - [Adaptive Quadrature](Numerical%20Analysis/Numerical%20Integration/Adaptive%20Quadrature.md)
