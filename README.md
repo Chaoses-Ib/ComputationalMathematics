@@ -3,6 +3,7 @@
 ### Sequence Algorithms
 - Search
   - [Binary Search](Algorithms/Sequences/Search/Binary%20Search.md)
+- [String-searching](Algorithms/Sequences/String-searching/README.md)
 
 ### Graph Algorithms
 
