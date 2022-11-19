@@ -8,6 +8,7 @@
 ### Graph Algorithms
 
 ## [Numerical Analysis](Numerical%20Analysis/README.md)
+- [Error Analysis](Numerical%20Analysis/Error%20Analysis/README.md)
 - [Order of Convergence](Numerical%20Analysis/Order%20of%20Convergence.md)
 - Root Finding
   - [Bisection Method](Numerical%20Analysis/Root%20Finding/Bisection%20Method.md)
