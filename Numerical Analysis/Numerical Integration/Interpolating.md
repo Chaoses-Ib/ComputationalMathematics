@@ -73,3 +73,80 @@ $$\begin{align}
 \end{align}$$
 
 ## Gaussian quadrature formulas
+由 $n+1$ 个插值点 $x_0,x_1,\cdots,x_n$ 构造出的插值型求积公式
+
+$$\int_a^b f(x)dx\approx \sum_{k=0}^n A_k f(x_k)$$
+
+的代数精度不超过 $2n+1$。
+
+具有 $2n+1$ 代数精度的求积公式称为 Gaussian 求积公式。其系数 $A_k$ 可由定义求出：
+
+$$\begin{cases}
+\int_a^b f(x^i)dx=\sum_{k=0}^n w_k f(x_k^i)
+\end{cases}$$
+
+即：
+
+$$\begin{cases}
+\int_a^b f(1)dx&=\sum_{k=0}^n w_k f(1) \\
+\int_a^b f(x)dx&=\sum_{k=0}^n w_k f(x_k) \\
+\int_a^b f(x^2)dx&=\sum_{k=0}^n w_k f(x_k^2) \\
+&\vdots \\
+\int_a^b f(x^{2n+1})dx&=\sum_{k=0}^n w_k f(x_k^{2n+1})
+\end{cases}$$
+
+该方程组为 $2n+2$ 元 $2n+1$ 次方程组。
+
+### 常见 Gaussian 求积公式
+在 $[-1,1]$ 上的 Gaussian 求积公式为：
+
+插值点 | 代数精度 | Gaussian 公式
+--- | --- | ---
+$1$ | $1$ | $2f(0)$
+$2$ | $3$ | $f(-{1 \over \sqrt 3})+f({1 \over \sqrt 3})$
+$3$ | $5$ | ${5\over 9}f(-\sqrt{3\over 5}) +{8\over 9}f(0) + {5\over 9}f(\sqrt{3\over 5})$
+
+可通过以下方法将 $[a,b]$ 上的积分变换到 $[-1,1]$ 上：
+
+$$\begin{align}
+\int _{a}^{b}f(x)\,dx
+&=\int _{-1}^{1}
+f\left({\frac {b-a}{2}}\xi +{\frac {a+b}{2}}\right)
+\,{\frac {dx}{d\xi }} d\xi \\
+&\approx {\frac {b-a}{2}}\sum _{i=1}^{n}w_{i}f\left({\frac {b-a}{2}}\xi _{i}+{\frac {a+b}{2}}\right)
+\end{align}$$
+
+其中 ${\frac {dx}{d\xi }={\frac {b-a}{2}}}$ 。
+
+观察到，对于 $[-a,a]$ 上的积分，${b-a\over 2}=a$，${a+b\over 2}=0$，即
+
+$$\begin{align}
+\int _{a}^{b}f(x)\,dx
+=a \int_{-1}^1 f(ax)\,d\xi
+\approx a\sum _{i=1}^{n}w_{i}f\left(a\xi _{i}\right)
+\end{align}$$
+
+故可推出在 $[-a,a]$ 上的 Gaussian 求积公式为：
+
+插值点 | 代数精度 | Gaussian 公式
+--- | --- | ---
+$1$ | $1$ | $2af(0)$
+$2$ | $3$ | $a[f(-{a \over \sqrt 3})+f({a \over \sqrt 3})]$
+$3$ | $5$ | $a[{5\over 9}f(-\sqrt{3\over 5}a) +{8\over 9}f(0) + {5\over 9}f(\sqrt{3\over 5}a)]$
+
+
+同理，对于 $[0,a]$ 上的积分，${b-a\over 2}={a\over 2}$，${a+b\over 2}={a\over 2}$，即
+
+$$\begin{align}
+\int _{a}^{b}f(x)\,dx
+\approx {\frac {a}{2}}\sum _{i=1}^{n}w_{i}f\left({\frac {a}{2}}\xi _{i}+{\frac {a}{2}}\right)
+= {\frac {a}{2}}\sum _{i=1}^{n}w_{i}f\left({\frac {a}{2}}(\xi_i+1)\right)
+\end{align}$$
+
+故可推出在 $[0,a]$ 上的 Gaussian 求积公式为：
+
+插值点 | 代数精度 | Gaussian 公式
+--- | --- | ---
+$1$ | $1$ | $af({a\over 2})$
+$2$ | $3$ | ${a\over 2}[f({a\over 2}(1-{1 \over \sqrt 3}))+f({a\over 2}(1+{1 \over \sqrt 3}))]$
+$3$ | $5$ | ${a\over 2}[{5\over 9}f({a\over 2}(1-\sqrt{3\over 5})) +{8\over 9}f({a\over 2}) + {5\over 9}f({a\over 2}(1+\sqrt{3\over 5}))]$
