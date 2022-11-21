@@ -15,6 +15,16 @@ $$x_{k+1}=g(x_k)$$
 ## Order of convergence
 线性收敛
 
+证明：
+
+$$\begin{align}
+\lim_{n\to\infty}{|x_{n+1}-x^\*| \over |x_n-x^\*|}
+&=\lim_{n\to\infty}{|g(x_n)-g(x^\*)| \over |x_n-x^\*|} \\
+&=\lim_{n\to\infty}{|g'(\xi)(x_n-x^\*)| \over |x_n-x^\*|} \\
+&=\lim_{n\to\infty}{|g'(\xi)|} \ne 0 \\
+
+\end{align}$$
+
 ## 实现
 Sage 实现：
 ```python
