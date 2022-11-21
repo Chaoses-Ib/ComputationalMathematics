@@ -49,3 +49,13 @@ def newton_poly(X, Y):
         for i in range(len(X))
     )
 ```
+
+## Hermite interpolation
+Lagrange 插值和 Newton 插值只要求插值多项式经过插值点，而 Hermite 插值还要求插值多项式与插值点相切，即多项式在插值点上的导数与原导数相等。
+
+计算方法：
+
+$$\begin{cases}
+H(x_i)=f(x_i) \\
+H'(x_i)=f'(x_i)
+\end{cases}$$
