@@ -31,8 +31,8 @@ where $f_k=f(x_k)=f(a+kh)$.
 ## Romberg's method
 $$\begin{align}
 {4T_{2n} - T_n \over 4-1}&=S_n \\
-{4^2 S_{2n} - S_n \over 4^2-1}&=C_n \\
-{4^3 S_{2n} - S_n \over 4^3-1}&=R_n \\
+{4^2 S_{2n} - S_n \over 4^2-1}&=B_n \\
+{4^3 B_{2n} - B_n \over 4^3-1}&=R_n \\
 \vdots
 \end{align}$$
 
@@ -72,14 +72,16 @@ $$\begin{align}
     +7f_n]
 \end{align}$$
 
+注意，composite rule 中的 $h$ 是指小区间长度，需要将它除以对应求积公式的步数才能得到对应求积公式中的 $h$，即小区间的步长。
+
 ## Gaussian quadrature formulas
 由 $n+1$ 个插值点 $x_0,x_1,\cdots,x_n$ 构造出的插值型求积公式
 
-$$\int_a^b f(x)dx\approx \sum_{k=0}^n A_k f(x_k)$$
+$$\int_a^b f(x)dx\approx \sum_{k=0}^n w_k f(x_k)$$
 
 的代数精度不超过 $2n+1$。
 
-具有 $2n+1$ 代数精度的求积公式称为 Gaussian 求积公式。其系数 $A_k$ 可由定义求出：
+具有 $2n+1$ 代数精度的求积公式称为 Gaussian 求积公式。其系数 $w_k$ 可由定义求出：
 
 $$\begin{cases}
 \int_a^b f(x^i)dx=\sum_{k=0}^n w_k f(x_k^i)
