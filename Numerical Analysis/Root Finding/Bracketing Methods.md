@@ -20,6 +20,9 @@
 - 无法求复根和偶重根
 - 收敛慢
 
+### Order of convergence
+二分法为线性收敛。
+
 ### 误差分析
 记 $a_0=a,b_0=b$，第 $k$ 步的有根区间为 $[a_k,b_k]$
 
@@ -68,10 +71,14 @@ def bisection_method(f, a, b, eps):
 **Method of false position (regula falsi, 试值法)**
 
 在 bisection method 的基础上，修改 $x$ 为经过 $(a,f(a))$ 和 $(b,f(b))$ 的割线 $y-f(b)={f(b)-f(a) \over b-a}(x-b)$ 的横截距，即
-$$x=b-{f(b)(b-a) \over f(b)-f(a)}$$
+
+$$x=b-{f(b) \over ({f(b)-f(a) \over b-a})} =b-{f(b)(b-a) \over f(b)-f(a)}$$
 
 由于试值法中有根区间的长度可能不趋于零，试值法的终止判别条件需要修改为：
 $$b-a<\delta \lor |f(c_n)|<\epsilon$$
+
+### Order of convergence
+试值法的收敛阶为 ${\sqrt 5+1 \over 2}$，即 golden ratio，为超线性收敛。
 
 ### 实现
 Sage 实现：

@@ -59,6 +59,11 @@ x_{k+1} &= x_k-{f(x_k) \over ({ f(x_k)-f(x_{k-1}) \over x_k-x_{k-1} })} \\
 
 但这也导致了 secant method 收敛更慢。
 
+### Order of convergence
+若 $f(x)$ 在 $x^\*$ 的某个邻域内连续且 $x^\*$ 是单根，则存在 $x^\*$ 的某个邻域 $N(x^\*)=[x^\*-\delta,x^\*+\delta]$， $\forall x_0\in N(x^\*)$，割线法的收敛阶为 ${\sqrt 5 + 1 \over 2}$，即 golden ratio，为超线性收敛。
+
+注意到，虽然割线法的收敛阶是与试值法相同的，但两者并不是相同的方法，割线法不需要使用零点存在定理；割线法一定收敛，而试值法可能不收敛。
+
 ### 实现
 Sage 实现：
 ```python
