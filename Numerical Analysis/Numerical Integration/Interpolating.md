@@ -39,6 +39,22 @@ $$\begin{align}
 ## Composite rule
 为了提高精度，可以将积分区间 $[a,b]$ 分为多个小区间，并在每个小区间上应用低次 Newton-Cotes formulas，进行求和。
 
+对于一个 Newton-Cotes formula：
+$$\int_a^bf(x)dx\approx{h\over 系数}(首+中间点+尾)$$
+
+它的对应 composite rule 为：
+
+$$\begin{align}
+\int_a^bf(x)dx
+&\approx {h \over 步数\times系数} [
+    首
+    +\sum_{k=0}^{n-1} 中间点
+    +\sum_{k=1}^{n-1} 端点
+    +尾]
+\end{align}$$
+
+即系数除步，首尾保留，中间不变，端点加倍。composite rule 中的 $h$ 是指小区间长度，需要将它除以对应求积公式的步数才能得到对应求积公式中的 $h$，即小区间的步长。
+
 Composite trapezoidal rule:
 
 $$\begin{align}
@@ -68,11 +84,11 @@ $$\begin{align}
     +32 \sum_{k=0}^{n-1} f_{k+{1\over 4}}
     +12 \sum_{k=0}^{n-1} f_{k+{1\over 2}}
     +32 \sum_{k=0}^{n-1} f_{k+{3\over 4}}
-    +14 \sum_{k=1}^{n-1} f_{k+1}
+    +14 \sum_{k=1}^{n-1} f_{k}
     +7f_n]
 \end{align}$$
 
-注意，composite rule 中的 $h$ 是指小区间长度，需要将它除以对应求积公式的步数才能得到对应求积公式中的 $h$，即小区间的步长。
+where ${h\over 90}={2h\over 45}\times{1\over 4}$.
 
 ## Gaussian quadrature formulas
 由 $n+1$ 个插值点 $x_0,x_1,\cdots,x_n$ 构造出的插值型求积公式
