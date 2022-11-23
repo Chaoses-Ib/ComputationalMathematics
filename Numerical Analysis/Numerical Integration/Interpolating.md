@@ -36,6 +36,8 @@ $$\begin{align}
 \vdots
 \end{align}$$
 
+每次迭代会增加 $2$ 个代数精度，$R_n$ 的代数精度为 $7$。
+
 ## Composite rule
 为了提高精度，可以将积分区间 $[a,b]$ 分为多个小区间，并在每个小区间上应用低次 Newton-Cotes formulas，进行求和。
 
