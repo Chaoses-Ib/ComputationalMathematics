@@ -8,7 +8,12 @@
 
 给定 $f(x)$ 的单峰区间 $[a,b]$，选择两个内点 $c < d$，使得 $a < c < d < b$。若 $f(c)\le f(d)$，则下次迭代区间为 $[a,d]$；若 $f(c)\ge f(d)$，则下次迭代区间为 $[c,b]$；若 $f(c)=f(d)$，则下次迭代区间为 $[c,d]$。（含有更小值或两端等高的区间）
 
-那么 $c,d$ 具体该如何选取呢？为了使得 $[a,c]$ 与 $[d,b]$ 对称，以及两个旧内点中的一个能够成为新区间的新内点，我们选取一个固定比例因子 $r={\sqrt 5 - 1 \over 2}$，并令 $c=a+(1-r)(b-a), d=a+r(b-a)$。
+那么 $c,d$ 具体该如何选取呢？为了使得 $[a,c]$ 与 $[d,b]$ 对称，以及两个旧内点中的一个能够成为新区间的新内点，我们选取一个固定比例因子 $r={\sqrt 5 - 1 \over 2}$，并令
+
+$$\begin{align}
+c &= b-r(b-a) &= a+(1-r)(b-a)\\
+d &= a+r(b-a) &= b-(1-r)(b-a)
+\end{align}$$
 
 Sage 实现：
 ```python
@@ -49,6 +54,8 @@ r_k &= {F_{n-1-k} \over F_{n-k}} \\
 & \vdots \\
 r_{n-3} &= {F_{2} \over F_{3}} = {1\over 2}
 \end{align}$$
+
+注意，golden-section search 与 Fibonacci search 的终止条件是不同的，golden-section search 的终止条件是 $|b_k-a_k|<\epsilon \lor |f(b_k)-f(a_k)<\epsilon|$，而 Fibonacci search 的终止条件是 $|b_k-a_k<\epsilon|$，但由于 $F_n$ 已经确保了这一点，使用 $r_{n-3}$ 作为终止条件就足够了。
 
 Sage 实现：
 ```python
