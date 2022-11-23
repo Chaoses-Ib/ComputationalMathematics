@@ -59,3 +59,5 @@ $$\begin{cases}
 H(x_i)=f(x_i) \\
 H'(x_i)=f'(x_i)
 \end{cases}$$
+
+其中 $H(x)$ 是一个 $2n+1$ 次的待定系数多项式。
