@@ -15,9 +15,12 @@
   - [Fixed-Point Iteration](Numerical%20Analysis/Root%20Finding/Fixed-Point%20Iteration.md)
   - [Newton's Methods](Numerical%20Analysis/Root%20Finding/Newton's%20Methods.md)
 - Numerical Linear Algebra
-  - [Gaussian Elimination](Numerical%20Analysis/Numerical%20Linear%20Algebra/Gaussian%20Elimination.md)
-  - [Lower-Upper Decomposition](Numerical%20Analysis/Numerical%20Linear%20Algebra/Lower-Upper%20Decomposition.md)
-  - [Jacobi Methods](Numerical%20Analysis/Numerical%20Linear%20Algebra/Jacobi%20Methods.md)
+  - [Matrix Transposition](Numerical%20Analysis/Numerical%20Linear%20Algebra/Matrix%20Transposition.md)
+  - Matrix Decompositions
+    - [Lower-Upper Decomposition](Numerical%20Analysis/Numerical%20Linear%20Algebra/Matrix%20Decompositions/Lower-Upper%20Decomposition.md)
+  - Solutions of Linear Systems
+    - [Gaussian Elimination](Numerical%20Analysis/Numerical%20Linear%20Algebra/Solutions/Gaussian%20Elimination.md)
+    - [Jacobi Methods](Numerical%20Analysis/Numerical%20Linear%20Algebra/Solutions/Jacobi%20Methods.md)
 - Interpolation
   - [Polynomial Interpolation](Numerical%20Analysis/Interpolation/Polynomial%20Interpolation.md)
 - Curve Fitting

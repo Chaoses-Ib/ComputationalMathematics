@@ -1,5 +1,5 @@
 # Lower-Upper Decomposition
-**Lower-upper decomposition** factors a matrix as the product of a lower triangular matrix and an upper triangular matrix. LU decomposition can be viwed as the matrix form of [Gaussian elimination](Gaussian%20Elimination.md).[^wiki]
+**Lower-upper decomposition** factors a matrix as the product of a lower triangular matrix and an upper triangular matrix. LU decomposition can be viwed as the matrix form of [Gaussian elimination](../Solutions/Gaussian%20Elimination.md).[^wiki]
 
 [^wiki]: [LU decomposition - Wikipedia](https://en.wikipedia.org/wiki/LU_decomposition)
 
