@@ -6,6 +6,10 @@
 - [String-searching](Algorithms/Sequences/String-searching/README.md)
 
 ### Graph Algorithms
+- [Graph Search](Algorithms/Graphs/Search/README.md)
+  - [Breadth-first Search](Algorithms/Graphs/Search/Breadth-first.md)
+  - [Depth-first Search](Algorithms/Graphs/Search/Depth-first.md)
+  - [Uniform-cost Search](Algorithms/Graphs/Search/Uniform-cost.md)
 
 ## [Numerical Analysis](Numerical%20Analysis/README.md)
 - [Error Analysis](Numerical%20Analysis/Error%20Analysis/README.md)
