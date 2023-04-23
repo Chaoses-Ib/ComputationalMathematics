@@ -81,5 +81,33 @@ Uninformed search algorithms[^ai-modern]:
 
   Bidirectional search simultaneously searches forward from the initial state and backwards from the goal state(s), hoping that the two searches will meet.
 
+### Informed search algorithms
+**Informed search algorithms (heuristic search algorithms)** use domain-specific hints about the location of goals and can find solutions more efficiently than unformed search algorithms.
+
+The hints come in the form of a **heuristic function**:
+$$h(n)=\text{estimated cost of the cheapest path from the state at node }n\text{ to a goal state}$$
+
+Generating heuristics:
+- Generating heuristics from relaxed problems
+  - Composite heuristics
+- Generating heuristics from subproblems
+  - Pattern databases
+- Generating heuristics with landmarks
+- Learning to search better
+- Learning heuristics from experience
+
+Informed search algorithms[^ai-modern]:
+- Greedy best-first search
+
+  [Wikipedia](https://en.wikipedia.org/wiki/Best-first_search#Greedy_BFS)
+
+  Greedy best-ﬁrst search is a form of best-ﬁrst search that expands ﬁrst the node with the lowest $h(n)$ value—the node that appears to be closest to the goal—on the grounds that this is likely to lead to a solution quickly. So the evaluation function $f(n) = h(n)$.
+
+- A\* search
+
+  A\* is the most common informed search algorithm. A\* search is a best-first seach that uses the evaluation function
+  $$f(n)=g(n)+h(n)$$
+  where $g(n)$ is the path cost from the initial state to node $n$, and $h(n)$ is the *estimated cost* of the shortest path from $n$ to a goal state, so we have
+  $$f(n)=\text{estimated cost of the best path that continues from }n\text{ to a goal}$$
 
 [^ai-modern]: Russell, Stuart J. Artificial Intelligence a Modern Approach. Pearson Education, Inc.,

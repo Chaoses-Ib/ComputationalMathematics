@@ -7,9 +7,14 @@
 
 ### Graph Algorithms
 - [Graph Search](Algorithms/Graphs/Search/README.md)
-  - [Breadth-first Search](Algorithms/Graphs/Search/Breadth-first.md)
-  - [Depth-first Search](Algorithms/Graphs/Search/Depth-first.md)
-  - [Uniform-cost Search](Algorithms/Graphs/Search/Uniform-cost.md)
+  - Uninformed Search
+    - [Breadth-first Search](Algorithms/Graphs/Search/Breadth-first.md)
+    - [Depth-first Search](Algorithms/Graphs/Search/Depth-first.md)
+    - [Uniform-cost Search](Algorithms/Graphs/Search/Uniform-cost.md)
+    - Bidirectional search
+  - Informed Search
+    - Greedy Best-first Search
+    - [A\* Search](Algorithms/Graphs/Search/A-star.md)
 
 ## [Numerical Analysis](Numerical%20Analysis/README.md)
 - [Error Analysis](Numerical%20Analysis/Error%20Analysis/README.md)
