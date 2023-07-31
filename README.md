@@ -2,6 +2,9 @@
 ## [Data Structures](Data/README.md)
 - [Data Types](Data/Types/README.md)
   - [Abstract Data Types](Data/Types/Abstract.md)
+- [Hash Tables](Data/Hash/README.md)
+- [Sparse Matrices](Data/Sparse/README.md)
+  - [Sparse Arrays](Data/Sparse/Arrays.md)
 
 ## [Algorithms](Algorithms/README.md)
 ### Sequence Algorithms
