@@ -1,4 +1,8 @@
 # Computational Mathematics
+## [Data Structures](Data/README.md)
+- [Data Types](Data/Types/README.md)
+  - [Abstract Data Types](Data/Types/Abstract.md)
+
 ## [Algorithms](Algorithms/README.md)
 ### Sequence Algorithms
 - Search
