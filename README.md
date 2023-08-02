@@ -8,6 +8,7 @@
 
 ## [Algorithms](Algorithms/README.md)
 ### Sequence Algorithms
+- [Merging](Algorithms/Sequences/Merging/README.md)
 - Search
   - [Binary Search](Algorithms/Sequences/Search/Binary%20Search.md)
 - [String-searching](Algorithms/Sequences/String-searching/README.md)
