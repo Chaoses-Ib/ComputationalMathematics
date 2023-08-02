@@ -8,6 +8,17 @@
 
 ## [Algorithms](Algorithms/README.md)
 ### Sequence Algorithms
+- [Sorting](Algorithms/Sequences/Sorting/README.md)
+  - [Comparison Sorts](Algorithms/Sequences/Sorting/Comparison/README.md)
+    - [Selection Sort](Algorithms/Sequences/Sorting/Comparison/Selection.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Selection.ipynb))
+    - [Insertion Sort](Algorithms/Sequences/Sorting/Comparison/Insertion.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Insertion.ipynb))
+    - [Merge Sort](Algorithms/Sequences/Sorting/Comparison/Merge.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Merge.ipynb))
+    - [Heapsort](Algorithms/Sequences/Sorting/Comparison/Heapsort.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Heapsort.ipynb))
+    - [Quicksort](Algorithms/Sequences/Sorting/Comparison/Quicksort.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Quicksort.ipynb))
+  - [Integer Sorting](Algorithms/Sequences/Sorting/Integer/README.md)
+    - [Bucket Sort](Algorithms/Sequences/Sorting/Integer/Bucket.md) ([Python](Algorithms/Sequences/Sorting/Integer/Bucket.ipynb))
+    - [Counting Sort](Algorithms/Sequences/Sorting/Integer/Counting.md) ([Python](Algorithms/Sequences/Sorting/Integer/Counting.ipynb))
+    - [Radix Sort](Algorithms/Sequences/Sorting/Integer/Radix.md) ([Python](Algorithms/Sequences/Sorting/Integer/Radix.ipynb))
 - [Merging](Algorithms/Sequences/Merging/README.md)
 - Search
   - [Binary Search](Algorithms/Sequences/Search/Binary%20Search.md)
