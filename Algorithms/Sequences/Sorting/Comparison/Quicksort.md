@@ -70,5 +70,23 @@ def quicksort(A, p, r):
 ### Combine
 Because the subarrays are already sorted, no work is needed to combine them.
 
+## Introsort
+[Wikipedia](https://en.wikipedia.org/wiki/Introsort)
+
+**Introsort (introspective sort)** is a hybrid sorting algorithm that provides both fast average performance and (asymptotically) optimal worst-case performance. It begins with quicksort, it switches to heapsort when the recursion depth exceeds a level based on (the logarithm of) the number of elements being sorted and it switches to insertion sort when the number of elements is below some threshold.
+
+### Pattern-defeating quicksort
+[GitHub](https://github.com/orlp/pdqsort)
+
+**Pattern-defeating quicksort (pdqsort)** is a variant of introsort incorporating the following improvements:
+- Median-of-three pivoting,
+- "BlockQuicksort" partitioning technique to mitigate branch misprediction penalities,
+- Linear time performance for certain input patterns (adaptive sort),
+- Use element shuffling on bad cases before trying the slower heapsort.
+
+pdqsort is used by Rust, GAP, and the C++ library Boost.
+
+[Pattern-defeating quicksort | Hacker News](https://news.ycombinator.com/item?id=14661659)
+
 
 [^wiki]: [Quicksort - Wikipedia](https://en.wikipedia.org/wiki/Quicksort)
