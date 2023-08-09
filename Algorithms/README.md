@@ -9,6 +9,7 @@ In mathematics and computer science, an **algorithm** is a finite sequence of ri
 ## Books
 - Introduction to Algorithms
 - The Art of Computer Programming (TAOCP)
+- [Algorithmica](https://en.algorithmica.org/)
 
 
 [^wiki]: [Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Algorithm)

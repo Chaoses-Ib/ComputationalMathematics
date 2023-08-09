@@ -8,6 +8,8 @@
 [dictionary - An efficient Map of elements with continuous integer keys in Java - Stack Overflow](https://stackoverflow.com/questions/55279761/an-efficient-map-of-elements-with-continuous-integer-keys-in-java)
 - [Sparse Arrays](../Sparse/Arrays.md)
 
+## [→Non-cryptographic hash functions](https://github.com/Chaoses-Ib/Cryptology#non-cryptographic-hash-functions)
+
 ## Collision resolution
 - Seperate chaining
 
@@ -18,8 +20,10 @@
   The performance of open addressing may be slower compared to separate chaining since the probe sequence increases when the load factor approaches 1.
 
   - Linear probing
+
+    The average cost of linear probing depends on the hash function's ability to distribute the elements **uniformly** throughout the table to avoid clustering, since formation of clusters would result in increased search time.
   
-  - Quadratic probing
+  - Quadratic probing (triangular probing) ([Wikipedia](https://en.wikipedia.org/wiki/Quadratic_probing))
   
   - Double hashing
 

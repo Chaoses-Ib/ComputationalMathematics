@@ -7,6 +7,12 @@
   - [Sparse Arrays](Data/Sparse/Arrays.md)
 
 ## [Algorithms](Algorithms/README.md)
+- [Branchless](Algorithms/Branchless.md)
+
+### [Arithmetic](Algorithms/Arithmetic/README.md)
+- [Integer Division](Algorithms/Arithmetic/Integer%20Division.md)
+- [Comparison](Algorithms/Arithmetic/Comparison.md)
+
 ### Sequence Algorithms
 - [Sorting](Algorithms/Sequences/Sorting/README.md)
   - [Comparison Sorts](Algorithms/Sequences/Sorting/Comparison/README.md)
