@@ -3,6 +3,8 @@
 - [Data Types](Data/Types/README.md)
   - [Abstract Data Types](Data/Types/Abstract.md)
 - [Hash Tables](Data/Hash/README.md)
+  - [Seperate Chaining](Data/Hash/Seperate%20Chaining.md)
+  - [Open Addressing](Data/Hash/Open%20Addressing.md)
 - [Sparse Matrices](Data/Sparse/README.md)
   - [Sparse Arrays](Data/Sparse/Arrays.md)
 

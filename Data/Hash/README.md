@@ -5,28 +5,19 @@
 
 [java - Why Are HashMaps Implemented Using Powers of Two? - Stack Overflow](https://stackoverflow.com/questions/53526790/why-are-hashmaps-implemented-using-powers-of-two)
 
+[The stable HashMap trap | More Stina Blog!](https://morestina.net/blog/1843/the-stable-hashmap-trap)
+
 [dictionary - An efficient Map of elements with continuous integer keys in Java - Stack Overflow](https://stackoverflow.com/questions/55279761/an-efficient-map-of-elements-with-continuous-integer-keys-in-java)
 - [Sparse Arrays](../Sparse/Arrays.md)
 
 ## [→Non-cryptographic hash functions](https://github.com/Chaoses-Ib/Cryptology#non-cryptographic-hash-functions)
 
 ## Collision resolution
-- Seperate chaining
+### [→Seperate chaining](Seperate%20Chaining.md)
 
-- Open addressing
+### [→Open Addressing](Open%20Addressing.md)
 
-  Since the slots are located in successive locations, linear probing could lead to better utilization of CPU cache due to locality of references resulting in reduced memory latency.
-
-  The performance of open addressing may be slower compared to separate chaining since the probe sequence increases when the load factor approaches 1.
-
-  - Linear probing
-
-    The average cost of linear probing depends on the hash function's ability to distribute the elements **uniformly** throughout the table to avoid clustering, since formation of clusters would result in increased search time.
-  
-  - Quadratic probing (triangular probing) ([Wikipedia](https://en.wikipedia.org/wiki/Quadratic_probing))
-  
-  - Double hashing
-
+### Others
 - Coalesced hashing
 
 - Cuckoo hashing
@@ -38,24 +29,96 @@
 ## Implementations
 [An Analysis of Hash Map Implementations in Popular Languages](https://rcoh.me/posts/hash-map-analysis/)
 
+Rust:
+- [std::collections::HashMap](https://doc.rust-lang.org/stable/std/collections/struct.HashMap.html)
+
+  [Storing Keys with Associated Values in Hash Maps - The Rust Programming Language](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
+
+- [rt_map: Runtime managed mutable borrowing from a map.](https://github.com/azriel91/rt_map)
+
+  ```rust
+  pub struct RtMap<K, V>(HashMap<K, Cell<V>>);
+  ```
+
+### Concurrent
+Rust:
+- [DashMap: Blazing fast concurrent HashMap for Rust.](https://github.com/xacrimon/dashmap)
+- [flashmap: A lock-free, partially wait-free, eventually consistent, concurrent hashmap.](https://github.com/Cassy343/flashmap)
+
+  ```rust
+  pub struct Core<K, V, S = DefaultHashBuilder> {
+      residual: AtomicIsize,
+      refcounts: Mutex<Slab<NonNull<RefCount>>>,
+      writer_thread: UnsafeCell<Option<Thread>>,
+      writer_map: Cell<MapIndex>,
+      maps: OwnedMapAccess<K, V, S>,
+      _not_sync: PhantomData<*const u8>,
+  }
+  ```
+
+  ```rust
+  pub struct ReadHandle<K, V, S = RandomState> {
+      core: Arc<Core<K, V, S>>,
+      map_access: SharedMapAccess<K, V, S>,
+      refcount: NonNull<RefCount>,
+      refcount_key: usize,
+  }
+  ```
+
+  ```rust
+  pub struct WriteHandle<K, V, S = RandomState>
+  where
+      K: Hash + Eq,
+      S: BuildHasher,
+  {
+      core: Arc<Core<K, V, S>>,
+      operations: UnsafeCell<Vec<Operation<K, V>>>,
+      uid: WriterUid,
+  }
+  ```
+  
+- [cht: Lockfree resizeable concurrent hash table.](https://github.com/Gregory-Meyer/cht)
+  - [moka-cht: Lock-free resizable concurrent hash table](https://github.com/moka-rs/moka-cht)
+
+[conc-map-bench](https://github.com/xacrimon/conc-map-bench)
+
+### Compact
+[Compact Hash Table Benchmark](https://github.com/koeppl/hashbench)
+
+C++:
 - [`dense_hash_map<Key, Data, HashFcn, EqualKey, Alloc>`](https://goog-sparsehash.sourceforge.net/doc/dense_hash_map.html)
 
 - [sparsehash: C++ associative containers](https://github.com/sparsehash/sparsehash)
   - `sparse_hash_map` has memory overhead of about 4 to 10 bits per hash-map entry, assuming a typical average occupancy of 50%.
   - `dense_hash_map` has a factor of 2-3 memory overhead: if your hashtable data takes X bytes, `dense_hash_map` will use 3X-4X memory total.
 
-### Seperate chaining
-- `ska::bytell_hash_map`
+Rust:
+- [Compressed maps without the keys, based on frayed ribbon cascades](https://github.com/bitwiseshiftleft/compressed_map)
 
-  [A new fast hash table in response to Google’s new fast hash table | Probably Dance](https://probablydance.com/2018/05/28/a-new-fast-hash-table-in-response-to-googles-new-fast-hash-table/)
+### Small
+Rust:
+- [micromap: 📈 A much faster (for very small maps!) alternative of Rust HashMap, which doesn't use hashing and doesn't use heap](https://github.com/yegor256/micromap)
 
-### Open addressing
-- Swiss tables
+- [litemap: a highly simplistic “flat” key-value map based off of a single sorted vector](https://docs.rs/litemap/latest/litemap/)
 
-  [abseil / Swiss Tables Design Notes](https://abseil.io/about/design/swisstables)
+[micromap Benchmark](https://github.com/yegor256/micromap#benchmark)
 
-  Rust: [→hashbrown](https://github.com/Chaoses-Ib/Rust/blob/main/Libraries/Data%20Structures.md#hash-tables)
+[The World's Smallest Hash Table | orlp.net](https://orlp.net/blog/worlds-smallest-hash-table/)
 
-- `ska::flat_hash_map`
+### Ordered
+Rust:
+- [indexmap: A hash table with consistent order and fast iteration; access items by key or sequence index](https://github.com/bluss/indexmap)
 
-  [I Wrote The Fastest Hashtable | Probably Dance](https://probablydance.com/2017/02/26/i-wrote-the-fastest-hashtable/)
+  ```rust
+  pub(crate) struct IndexMapCore<K, V> {
+      /// indices mapping from the entry hash to its index.
+      indices: RawTable<usize>,
+      /// entries is a dense vec of entries in their order.
+      entries: Vec<Bucket<K, V>>,
+  }
+  ```
+- [linked-hash-map: A HashMap wrapper that holds key-value pairs in insertion order](https://github.com/contain-rs/linked-hash-map)
+
+### Perfect
+Rust:
+- [Rust-PHF: Compile time static maps for Rust](https://github.com/rust-phf/rust-phf)
