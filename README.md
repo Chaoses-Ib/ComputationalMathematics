@@ -1,47 +1,48 @@
 # Computational Mathematics
-## [Data Structures](Data/README.md)
-- [Data Types](Data/Types/README.md)
-  - [Abstract Data Types](Data/Types/Abstract.md)
-- [Hash Tables](Data/Hash/README.md)
-  - [Seperate Chaining](Data/Hash/Seperate%20Chaining.md)
-  - [Open Addressing](Data/Hash/Open%20Addressing.md)
-- [Sparse Matrices](Data/Sparse/README.md)
-  - [Sparse Arrays](Data/Sparse/Arrays.md)
-
 ## [Algorithms](Algorithms/README.md)
 - [Branchless](Algorithms/Branchless.md)
 
-### [Arithmetic](Algorithms/Arithmetic/README.md)
-- [Integer Division](Algorithms/Arithmetic/Integer%20Division.md)
-- [Comparison](Algorithms/Arithmetic/Comparison.md)
+- [Data Types](Algorithms/Data/README.md)
+  - [Abstract Data Types](Algorithms/Data/Abstract.md)
 
-### Sequence Algorithms
-- [Sorting](Algorithms/Sequences/Sorting/README.md)
-  - [Comparison Sorts](Algorithms/Sequences/Sorting/Comparison/README.md)
-    - [Selection Sort](Algorithms/Sequences/Sorting/Comparison/Selection.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Selection.ipynb))
-    - [Insertion Sort](Algorithms/Sequences/Sorting/Comparison/Insertion.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Insertion.ipynb))
-    - [Merge Sort](Algorithms/Sequences/Sorting/Comparison/Merge.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Merge.ipynb))
-    - [Heapsort](Algorithms/Sequences/Sorting/Comparison/Heapsort.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Heapsort.ipynb))
-    - [Quicksort](Algorithms/Sequences/Sorting/Comparison/Quicksort.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Quicksort.ipynb))
-  - [Integer Sorting](Algorithms/Sequences/Sorting/Integer/README.md)
-    - [Bucket Sort](Algorithms/Sequences/Sorting/Integer/Bucket.md) ([Python](Algorithms/Sequences/Sorting/Integer/Bucket.ipynb))
-    - [Counting Sort](Algorithms/Sequences/Sorting/Integer/Counting.md) ([Python](Algorithms/Sequences/Sorting/Integer/Counting.ipynb))
-    - [Radix Sort](Algorithms/Sequences/Sorting/Integer/Radix.md) ([Python](Algorithms/Sequences/Sorting/Integer/Radix.ipynb))
-- [Merging](Algorithms/Sequences/Merging/README.md)
-- Search
-  - [Binary Search](Algorithms/Sequences/Search/Binary%20Search.md)
-- [String-searching](Algorithms/Sequences/String-searching/README.md)
+- [Arithmetic](Algorithms/Arithmetic/README.md)
+  - [Integer Division](Algorithms/Arithmetic/Integer%20Division.md)
+  - [Comparison](Algorithms/Arithmetic/Comparison.md)
 
-### Graph Algorithms
-- [Graph Search](Algorithms/Graphs/Search/README.md)
-  - Uninformed Search
-    - [Breadth-first Search](Algorithms/Graphs/Search/Breadth-first.md)
-    - [Depth-first Search](Algorithms/Graphs/Search/Depth-first.md)
-    - [Uniform-cost Search](Algorithms/Graphs/Search/Uniform-cost.md)
-    - Bidirectional search
-  - Informed Search
-    - Greedy Best-first Search
-    - [A\* Search](Algorithms/Graphs/Search/A-star.md)
+- [Sequences](Algorithms/Sequences/README.md)
+  - [Sorting](Algorithms/Sequences/Sorting/README.md)
+    - [Comparison Sorts](Algorithms/Sequences/Sorting/Comparison/README.md)
+      - [Selection Sort](Algorithms/Sequences/Sorting/Comparison/Selection.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Selection.ipynb))
+      - [Insertion Sort](Algorithms/Sequences/Sorting/Comparison/Insertion.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Insertion.ipynb))
+      - [Merge Sort](Algorithms/Sequences/Sorting/Comparison/Merge.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Merge.ipynb))
+      - [Heapsort](Algorithms/Sequences/Sorting/Comparison/Heapsort.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Heapsort.ipynb))
+      - [Quicksort](Algorithms/Sequences/Sorting/Comparison/Quicksort.md) ([Python](Algorithms/Sequences/Sorting/Comparison/Quicksort.ipynb))
+    - [Integer Sorting](Algorithms/Sequences/Sorting/Integer/README.md)
+      - [Bucket Sort](Algorithms/Sequences/Sorting/Integer/Bucket.md) ([Python](Algorithms/Sequences/Sorting/Integer/Bucket.ipynb))
+      - [Counting Sort](Algorithms/Sequences/Sorting/Integer/Counting.md) ([Python](Algorithms/Sequences/Sorting/Integer/Counting.ipynb))
+      - [Radix Sort](Algorithms/Sequences/Sorting/Integer/Radix.md) ([Python](Algorithms/Sequences/Sorting/Integer/Radix.ipynb))
+  - [Merging](Algorithms/Sequences/Merging/README.md)
+  - Search
+    - [Binary Search](Algorithms/Sequences/Search/Binary%20Search.md)
+  - [String-searching](Algorithms/Sequences/String-searching/README.md)
+
+- [Sparse Matrices](Algorithms/Sparse/README.md)
+  - [Sparse Arrays](Algorithms/Sparse/Arrays.md)
+
+- [Hash Tables](Algorithms/Hash/README.md)
+  - [Seperate Chaining](Algorithms/Hash/Seperate%20Chaining.md)
+  - [Open Addressing](Algorithms/Hash/Open%20Addressing.md)
+
+- [Graphs](Algorithms/Graphs/README.md)
+  - [Graph Search](Algorithms/Graphs/Search/README.md)
+    - Uninformed Search
+      - [Breadth-first Search](Algorithms/Graphs/Search/Breadth-first.md)
+      - [Depth-first Search](Algorithms/Graphs/Search/Depth-first.md)
+      - [Uniform-cost Search](Algorithms/Graphs/Search/Uniform-cost.md)
+      - Bidirectional search
+    - Informed Search
+      - Greedy Best-first Search
+      - [A\* Search](Algorithms/Graphs/Search/A-star.md)
 
 ## [Numerical Analysis](Numerical%20Analysis/README.md)
 - [Error Analysis](Numerical%20Analysis/Error%20Analysis/README.md)

@@ -6,6 +6,13 @@ In mathematics and computer science, an **algorithm** is a finite sequence of ri
 
 [List of algorithms](https://en.wikipedia.org/wiki/List_of_algorithms)
 
+## Data structures
+[Wikipedia](https://en.wikipedia.org/wiki/Data_structure)
+
+A **data structure** is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data, i.e., it is an algebraic structure about data.
+
+[Why are "Algorithms" and "Data Structures" treated as separate disciplines? - Stack Overflow](https://stackoverflow.com/questions/2441845/why-are-algorithms-and-data-structures-treated-as-separate-disciplines)
+
 ## Books
 - Introduction to Algorithms
 - The Art of Computer Programming (TAOCP)
