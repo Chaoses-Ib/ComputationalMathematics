@@ -44,6 +44,13 @@
       - Greedy Best-first Search
       - [A\* Search](Algorithms/Graphs/Search/A-star.md)
 
+  - [Sorting: Topological Sort](Algorithms/Graphs/Sorting/README.md)
+    - [Dynamic Topological Sort](Algorithms/Graphs/Sorting/Dynamic.md)
+    - [Constrained Topological Sort](Algorithms/Graphs/Sorting/Constrained.md)
+
+  - Routing
+    - [Travelling Salesman Problem](Algorithms/Graphs/Routing/TSP/README.md)
+
 ## [Numerical Analysis](Numerical%20Analysis/README.md)
 - [Error Analysis](Numerical%20Analysis/Error%20Analysis/README.md)
 - [Order of Convergence](Numerical%20Analysis/Order%20of%20Convergence.md)
