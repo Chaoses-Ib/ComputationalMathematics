@@ -1,0 +1,18 @@
+# Memoization
+[Wikipedia](https://en.wikipedia.org/wiki/Memoization)
+
+**Memoization** is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls to pure functions and returning the cached result when the same inputs occur again.
+
+## Dynamic programming
+[Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming)
+
+[terminology - What is "dynamic" about dynamic programming? - Computer Science Stack Exchange](https://cs.stackexchange.com/questions/17871/what-is-dynamic-about-dynamic-programming)
+- > Actually, there is nothing special in the name "dynamic programming"; the technique itself is just about smartly unwinding recursion.
+- > I spent the Fall quarter (of 1950) at RAND. My first task was to find a name for multistage decision processes. An interesting question is, "Where did the name, dynamic programming, come from?" The 1950s were not good years for mathematical research. We had a very interesting gentleman in Washington named Wilson. He was Secretary of Defense, and he actually had a pathological fear and hatred of the word "research". I'm not using the term lightly; I'm using it precisely. His face would suffuse, he would turn red, and he would get violent if people used the term research in his presence. You can imagine how he felt, then, about the term mathematical. The RAND Corporation was employed by the Air Force, and the Air Force had Wilson as its boss, essentially. Hence, I felt I had to do something to shield Wilson and the Air Force from the fact that I was really doing mathematics inside the RAND Corporation. What title, what name, could I choose? In the first place I was interested in planning, in decision making, in thinking. But planning, is not a good word for various reasons. I decided therefore to use the word "programming". I wanted to get across the idea that this was dynamic, this was multistage, this was time-varying. I thought, let's kill two birds with one stone. Let's take a word that has an absolutely precise meaning, namely dynamic, in the classical physical sense. It also has a very interesting property as an adjective, and that is it's impossible to use the word dynamic in a pejorative sense. Try thinking of some combination that will possibly give it a pejorative meaning. It's impossible. Thus, I thought dynamic programming was a good name. It was something not even a Congressman could object to. So I used it as an umbrella for my activities.
+- > The above explanation of the origin of the term is lacking. As Russell and Norvig in their book have written, referring to the above story: "This cannot be strictly true, because his first paper using the term (Bellman, 1952) appeared before Wilson became Secretary of Defense in 1953." Also, there is a comment in a speech by Harold J. Kushner, where he remembers Bellman. Quoting Kushner as he speaks of Bellman: "On the other hand, when I asked him the same question, he replied that he was trying to upstage Dantzig's linear programming by adding dynamic. Perhaps both motivations were true."
+
+[algorithm - Difference between Divide and Conquer Algo and Dynamic Programming - Stack Overflow](https://stackoverflow.com/questions/13538459/difference-between-divide-and-conquer-algo-and-dynamic-programming)
+- > ![](https://cdn-images-1.medium.com/max/2000/1*BwuDAdImyK_nZpb-H8h3SA.jpeg)
+
+[algorithm - What's the difference between recursion, memoization & dynamic programming? - Stack Overflow](https://stackoverflow.com/questions/12133754/whats-the-difference-between-recursion-memoization-dynamic-programming)
+- > divide & conquer + memoization == top-down dynamic programming
