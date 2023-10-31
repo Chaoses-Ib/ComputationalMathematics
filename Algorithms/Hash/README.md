@@ -43,6 +43,16 @@ Rust:
 ### Concurrent
 Rust:
 - [DashMap: Blazing fast concurrent HashMap for Rust.](https://github.com/xacrimon/dashmap)
+  - [Document single-threaded deadlock behavior - Issue #74 - xacrimon/dashmap](https://github.com/xacrimon/dashmap/issues/74)
+  - [Document deadlock conditions - Issue #233 - xacrimon/dashmap](https://github.com/xacrimon/dashmap/issues/233)
+
+    > **Locking behavior:** May deadlock if called when **the current thread is** holding any sort of reference into the map.
+  - [Key-level guarantees - Issue #253 - xacrimon/dashmap](https://github.com/xacrimon/dashmap/issues/253)
+
+- `HashMap<K, usize> + RwLock<Vec<V>>`
+
+- [Leapfrog: Lock-free concurrent and single-threaded hash map implementations using Leapfrog probing.](https://github.com/robclu/leapfrog)
+
 - [flashmap: A lock-free, partially wait-free, eventually consistent, concurrent hashmap.](https://github.com/Cassy343/flashmap)
 
   ```rust
@@ -76,11 +86,14 @@ Rust:
       uid: WriterUid,
   }
   ```
-  
+
+- [flurry: A port of Java's ConcurrentHashMap to Rust](https://github.com/jonhoo/flurry)
+
 - [cht: Lockfree resizeable concurrent hash table.](https://github.com/Gregory-Meyer/cht)
   - [moka-cht: Lock-free resizable concurrent hash table](https://github.com/moka-rs/moka-cht)
 
 [conc-map-bench](https://github.com/xacrimon/conc-map-bench)
+- [robclu/conc-map-bench: Fork of rust concurrent hash map bencmarks to include leapfrog map.](https://github.com/robclu/conc-map-bench)
 
 ### Compact
 [Compact Hash Table Benchmark](https://github.com/koeppl/hashbench)

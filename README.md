@@ -33,6 +33,10 @@
   - [Seperate Chaining](Algorithms/Hash/Seperate%20Chaining.md)
   - [Open Addressing](Algorithms/Hash/Open%20Addressing.md)
 
+- [Trees](Algorithms/Trees/README.md)
+  - [Tries](Algorithms/Trees/Tries/README.md)
+    - [Hash Tries](Algorithms/Trees/Tries/Hash/README.md)
+
 - [Graphs](Algorithms/Graphs/README.md)
   - [Graph Search](Algorithms/Graphs/Search/README.md)
     - Uninformed Search

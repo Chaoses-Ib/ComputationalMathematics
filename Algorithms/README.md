@@ -36,11 +36,34 @@ A **data structure** is a collection of data values, the relationships among the
 
     主站可以往中国站同步，但反过来不行。
 
+    [禁止 Leetcode 跳转中文站](https://greasyfork.org/zh-CN/scripts/408371-%E7%A6%81%E6%AD%A2-leetcode-%E8%B7%B3%E8%BD%AC%E4%B8%AD%E6%96%87%E7%AB%99)
+
   - Premium
 
     [leetcode(力扣)Plus 会员咨询 - V2EX](https://www.v2ex.com/t/775946)
 
     没必要
+
+  - Solutions
+    - [kamyu104/LeetCode-Solutions: 🏋️ Python / Modern C++ Solutions of All 2920 LeetCode Problems (Weekly Update)](https://github.com/kamyu104/LeetCode-Solutions)
+    - [Leetcode All Problems with Java/C++ solutions](https://leetcode.ca/all/problems.html)
+    - [LeetCode Solutions](https://walkccc.me/LeetCode/)
+    - Java: [longluo/leetcode: My Leetcode Solutions](https://github.com/longluo/leetcode)
+    - Python: [csujedihy/lc-all-solutions: My own leetcode solutions by python](https://github.com/csujedihy/lc-all-solutions)
+
+    Chinese:
+    - [参考答案查询 - 九章算法](https://www.jiuzhang.com/problems)
+    - C++: [ShusenTang/LeetCode: LeetCode solutions with Chinese explanation & Summary of classic algorithms.](https://github.com/ShusenTang/LeetCode)
+    - [CS-Notes/notes/Leetcode 题解 - 目录.md - CyC2018/CS-Notes](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
+    - [azl397985856/leetcode: LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)](https://github.com/azl397985856/leetcode)
+      - [力扣加加 - 努力做西湖区最好的算法题解](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/)
+    - [LeetCode 系列题解](https://leetcode.hi-dhl.com/)
+    - JS: [LeetCode题解](https://biaodigit.github.io/LeetCode/about/)
+    - [leetcode题解助手](https://greasyfork.org/zh-CN/scripts/386679-leetcode%E9%A2%98%E8%A7%A3%E5%8A%A9%E6%89%8B)
+
+  [vscode-leetcode: Solve LeetCode problems in VS Code](https://github.com/LeetCode-OpenSource/vscode-leetcode)
+
+  [Refined LeetCode: 网页版力扣扩展,提高 LeetCode-cn 刷题体验](https://github.com/XYShaoKang/refined-leetcode)
 
 - [LintCode 炼码 - ChatGPT！更高效的学习体验！](https://www.lintcode.com/)
 
