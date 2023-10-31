@@ -25,8 +25,12 @@
       - [Radix Sort](Algorithms/Sequences/Sorting/Integer/Radix.md) ([Python](Algorithms/Sequences/Sorting/Integer/Radix.ipynb))
   - [Merging](Algorithms/Sequences/Merging/README.md)
   - Search
-    - [Binary Search](Algorithms/Sequences/Search/Binary%20Search.md)
-  - [String-searching](Algorithms/Sequences/String-searching/README.md)
+    - [Binary Search](Algorithms/Sequences/Search/Binary.md)
+  - Substrings
+    - [Search](Algorithms/Sequences/Substrings/Search/README.md)
+    - [Longest Common Substrings](Algorithms/Sequences/Substrings/Common.md)
+  - Subsequences
+    - [Longest Common Subsequences](Algorithms/Sequences/Subsequences/Common.md)
 
 - [Sparse Matrices](Algorithms/Sparse/README.md)
   - [Sparse Arrays](Algorithms/Sparse/Arrays.md)
