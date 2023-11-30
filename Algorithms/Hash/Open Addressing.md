@@ -190,12 +190,13 @@ However, this implementation is slower than the simple implementation.
 
     [Replace HashMap implementation with SwissTable (as an external crate) by Amanieu · Pull Request #58623 · rust-lang/rust](https://github.com/rust-lang/rust/pull/58623)
 
-    [Worse memory usage than old stdlib hashmap due to growth factor differences. · Issue #304 · rust-lang/hashbrown](https://github.com/rust-lang/hashbrown/issues/304)
-    - `(capacity() * 8 / 7).next_power_of_two() * (sizeof((K, V)) + sizeof(u8))`
+    Memory usage:
+    - `(capacity() * 8 / 7).next_power_of_two() * (sizeof((K, V)) + sizeof(u8))` ([hashbrown/src/raw/mod.rs](https://github.com/rust-lang/hashbrown/blob/f2e62124cd947b5e2309dd6a24c7e422932aae97/src/raw/mod.rs#L195-L217))
 
-    [Measuring the overhead of HashMaps in Rust | nicole@web](https://ntietz.com/blog/rust-hashmap-overhead/)
-
-    [Measure the memory usage of HashMap better · Issue #6908 · servo/servo](https://github.com/servo/servo/issues/6908)
+      Actually the `next_power_of_two()` plays a more important role in the final size. For example, if we reserve a capacity of 917,505, given the load factor, the map needs 1,048,577 buckets, but `next_power_of_two()` then makes it 2,097,152 buckets, and the utilization rate is only 43.75% (if we only need to store 917,505 items).
+    - [Worse memory usage than old stdlib hashmap due to growth factor differences. · Issue #304 · rust-lang/hashbrown](https://github.com/rust-lang/hashbrown/issues/304)
+    - [Measuring the overhead of HashMaps in Rust | nicole@web](https://ntietz.com/blog/rust-hashmap-overhead/)
+    - [Measure the memory usage of HashMap better · Issue #6908 · servo/servo](https://github.com/servo/servo/issues/6908)
 
     [Plans for `node_hash_map` · Issue #234 · rust-lang/hashbrown](https://github.com/rust-lang/hashbrown/issues/234)
 
