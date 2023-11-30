@@ -40,8 +40,11 @@
   - [Open Addressing](Algorithms/Hash/Open%20Addressing.md)
 
 - [Trees](Algorithms/Trees/README.md)
+  - [Binary Trees](Algorithms/Trees/Binary/README.md)
+    - [Threaded Binary Trees](Algorithms/Trees/Binary/Threaded.md)
   - [Tries](Algorithms/Trees/Tries/README.md)
     - [Hash Tries](Algorithms/Trees/Tries/Hash/README.md)
+  - [Traversal](Algorithms/Trees/Traversal.md)
 
 - [Graphs](Algorithms/Graphs/README.md)
   - [Graph Search](Algorithms/Graphs/Search/README.md)

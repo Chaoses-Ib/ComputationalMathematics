@@ -1,0 +1,4 @@
+# Threaded Binary Trees
+[Wikipedia](https://en.wikipedia.org/wiki/Threaded_binary_tree)
+
+> An entire binary search tree can be easily traversed in order of the main key, but given only a pointer to a node, finding the node which comes next may be slow or impossible. For example, leaf nodes by definition have no descendants, so given only a pointer to a leaf node no other node can be reached. A threaded tree adds extra information in some or all nodes, so that for any given single node the "next" node can be found quickly, allowing tree traversal without recursion and the extra storage (proportional to the tree's depth) that recursion requires.
