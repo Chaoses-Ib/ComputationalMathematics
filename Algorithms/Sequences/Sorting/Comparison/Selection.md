@@ -41,5 +41,7 @@ Complexity[^wiki]:
 
 $$T(n) = (n-1)+(n-2)+...+1 = (n-1)\frac{(n-1)+1}{2} = \frac{1}{2}(n^2-n) \in \Theta(n^2) $$
 
+Space: $O(1)$ auxiliary
+
 
 [^wiki]: [Selection sort - Wikipedia](https://en.wikipedia.org/wiki/Selection_sort)

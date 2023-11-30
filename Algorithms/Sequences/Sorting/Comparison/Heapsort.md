@@ -11,4 +11,6 @@ def heap_sort(A):
         max_heapify(A, 0, size)
 ```
 
-Time complexity: $O(n\lg n)$
+Time: $O(n\lg n)$
+
+Space: $\Theta(1)$ auxiliary

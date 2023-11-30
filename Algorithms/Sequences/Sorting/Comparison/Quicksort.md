@@ -4,6 +4,9 @@
 ## Description
 ![](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif) [^wiki]
 
+Space: $O(n)$ auxiliary (recursion)
+- Hoare: $O(\log n)$ auxiliary
+
 ### Divide
 Partition the array $A[p..r]$ into two subarrays $A[p..q-1]$ and $A[q+1..r]$ such that each element of $A[p..q-1]$ is less than or equal to $A[q]$, which is, in turn, less than or equal to each element of $A[q+1..r]$. Compute the index $q$ as part of this partitioning procedure.
 
