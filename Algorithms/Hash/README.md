@@ -27,6 +27,8 @@
 - Robin Hood hashing
 
 ## Implementations
+- [ ] Whole process hash table
+
 [An Analysis of Hash Map Implementations in Popular Languages](https://rcoh.me/posts/hash-map-analysis/)
 
 Rust:

@@ -36,6 +36,17 @@ The average cost of linear probing depends on the hash function's ability to dis
 Quadratic probing can be a more efficient algorithm in an open addressing table, since it **better avoids the clustering** problem that can occur with linear probing, although it is not immune. It also provides **good memory caching** because it preserves some locality of reference; however, linear probing has greater locality and, thus, better cache performance.
 
 ### Full cycle by $m=2^n$
+> 比如大小为 8，初始位置为 3：
+> - 先读取 3
+> - 然后 +1，读 4
+> - 然后 +2，读 6
+> - 然后 +3，读 9%8=1
+> - 然后 +4，读 5
+> - 然后 +5，读 10%8=2
+> - 然后 +6，读 8%8=0
+> - 然后 +7，读 7
+> 
+> 终止，正好每个位置读了一次，连续冲突的概率也比 linear probing 小。
 
 ### Full cycle by $m=n^p$
 
