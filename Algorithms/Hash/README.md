@@ -130,6 +130,10 @@ Rust:
       entries: Vec<Bucket<K, V>>,
   }
   ```
+  When $(1-p)V > I$ or $p < 1-{I \over V}$,
+  $$(K + V + H) \cdot n/p > (K + I + H) \cdot n/p + V \cdot n $$
+  i.e. the index map will be smaller than the normal map.
+
 - [linked-hash-map: A HashMap wrapper that holds key-value pairs in insertion order](https://github.com/contain-rs/linked-hash-map)
 
 ### Perfect
