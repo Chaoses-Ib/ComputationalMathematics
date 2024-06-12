@@ -1,4 +1,9 @@
 # Computational Mathematics
+## [Arithmetic](Arithmetic/README.md)
+- [Integer Division](<Arithmetic/Integer Division.md>)
+- [Comparison](Arithmetic/Comparison.md)
+- [Arbitrary-precision Arithmetic](Arithmetic/Arbitrary-precision/README.md)
+
 ## [Algorithms](Algorithms/README.md)
 - [Recursion](Algorithms/Recursion/README.md)
   - [Memoization](Algorithms/Recursion/Memoization.md)
@@ -6,10 +11,6 @@
 
 - [Data Types](Algorithms/Data/README.md)
   - [Abstract Data Types](Algorithms/Data/Abstract.md)
-
-- [Arithmetic](Algorithms/Arithmetic/README.md)
-  - [Integer Division](Algorithms/Arithmetic/Integer%20Division.md)
-  - [Comparison](Algorithms/Arithmetic/Comparison.md)
 
 - [Sequences](Algorithms/Sequences/README.md)
   - [Sorting](Algorithms/Sequences/Sorting/README.md)
