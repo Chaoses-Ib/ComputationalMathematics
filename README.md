@@ -2,6 +2,7 @@
 ## [Arithmetic](Arithmetic/README.md)
 - [Integer Division](<Arithmetic/Integer Division.md>)
 - [Comparison](Arithmetic/Comparison.md)
+- [Floating-point Arithmetic](Arithmetic/Floating-point/README.md)
 - [Arbitrary-precision Arithmetic](Arithmetic/Arbitrary-precision/README.md)
 
 ## [Algorithms](Algorithms/README.md)
