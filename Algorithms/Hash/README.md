@@ -10,6 +10,11 @@
 [dictionary - An efficient Map of elements with continuous integer keys in Java - Stack Overflow](https://stackoverflow.com/questions/55279761/an-efficient-map-of-elements-with-continuous-integer-keys-in-java)
 - [Sparse Arrays](../Sparse/Arrays.md)
 
+[Scientists Find Optimal Balance of Data Storage and Time | Quanta Magazine](https://www.quantamagazine.org/scientists-find-optimal-balance-of-data-storage-and-time-20240208/)
+- [奇客Solidot | 科学家找到数据存储和时间的最佳平衡](https://www.solidot.org/story?sid=77340)
+
+  > 1953 年 IBM 科学家 Hans Peter Luhn 提出了一种存储和检索信息的新方法，它就是哈希表（hash table），如今已内置在几乎所有计算机系统中。哈希表是历史最悠久、速度最快、最简单且使用最广泛的数据结构之一，它设计执行三个操作：插入，在数据库里加入新条目；查询，获取一个条目或检查该条目是否存在；删除。Chrome 或 Safari 等浏览器可能内置了多个哈希表去跟踪不同类的数据。哈希表不可避免的存在权衡取舍。1957 年另一位 IBM 计算机科学家 W. Wesley Peterson 指出了哈希表面临的技术挑战：需要足够快以快速检索必要的信息，需要紧凑使用尽可能少的内存。两个目标从根本上是矛盾的：哈希表有更多内存时能更快访问和修改数据库，哈希表使用更少空间时操作会很慢。几十年来，研究人员一直在寻找哈希表时间和空间的最佳平衡。2022 年纽约石溪大学的 Michael Bender 等人发表论文，提出了一种具有时间和空间效率最佳组合的新哈希表。2023 年普林斯顿大学 Huacheng Yu 领导的一个团队证明 Bender 的哈希表是理论上的最优解。由于新哈希表太复杂，还没人尝试在短时间去构建，而且理论上快的算法在实践中未必快。
+
 ## [→Non-cryptographic hash functions](https://github.com/Chaoses-Ib/Cryptology#non-cryptographic-hash-functions)
 
 ## Collision resolution
@@ -30,6 +35,10 @@
 - [ ] Whole process hash table
 
 [An Analysis of Hash Map Implementations in Popular Languages](https://rcoh.me/posts/hash-map-analysis/)
+
+C++:
+- [An Extensive Benchmark of C and C++ Hash Tables | A comparative, extendible benchmarking suite for C and C++ hash-table libraries.](https://jacksonallan.github.io/c_cpp_hash_tables_benchmark/) ([Lobste.rs](https://lobste.rs/s/agihne/extensive_benchmark_c_c_hash_tables))
+- [Looking up a C++ Hash Table with a pre-known hash](https://ebadblog.com/looking-up-a-c++-hash-table-with-a-pre-known-hash) ([r/cpp](https://www.reddit.com/r/cpp/comments/1cy0mg9/looking_up_a_c_hash_table_with_a_preknown_hash/))
 
 Rust:
 - [std::collections::HashMap](https://doc.rust-lang.org/stable/std/collections/struct.HashMap.html)
@@ -52,6 +61,12 @@ Rust:
   - [Key-level guarantees - Issue #253 - xacrimon/dashmap](https://github.com/xacrimon/dashmap/issues/253)
 
 - `HashMap<K, usize> + RwLock<Vec<V>>`
+
+- [papaya: A fast and ergonomic concurrent hash-table for read-heavy workloads.](https://github.com/ibraheemdev/papaya)
+
+  [papaya: a fast and ergonomic concurrent hash-table for read-heavy workloads : r/rust](https://www.reddit.com/r/rust/comments/1dzrz31/papaya_a_fast_and_ergonomic_concurrent_hashtable/)
+
+  [Designing A Fast Concurrent Hash Table](https://ibraheem.ca/posts/designing-papaya/) ([r/rust](https://www.reddit.com/r/rust/comments/1g0g4ac/designing_a_fast_concurrent_hash_table), [Hacker News](https://news.ycombinator.com/item?id=41798475))
 
 - [Leapfrog: Lock-free concurrent and single-threaded hash map implementations using Leapfrog probing.](https://github.com/robclu/leapfrog)
 
@@ -141,3 +156,6 @@ Rust:
 ### Perfect
 Rust:
 - [Rust-PHF: Compile time static maps for Rust](https://github.com/rust-phf/rust-phf)
+
+C++:
+- [mph: C++20 \[Minimal\] Static Perfect Hash library](https://github.com/qlibs/mph)
