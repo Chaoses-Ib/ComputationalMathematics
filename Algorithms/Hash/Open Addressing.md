@@ -211,6 +211,11 @@ However, this implementation is slower than the simple implementation.
 
     [Plans for `node_hash_map` · Issue #234 · rust-lang/hashbrown](https://github.com/rust-lang/hashbrown/issues/234)
 
+    > 发现标准库的HashMap和hashbrown的不是完全一样的， hashbrown的Occupied没有拿key的所有权，通过entry_ref可以只传引用拿到EntryRef  
+    > hashbrown里：  
+    > OccupiedEntry 通过 elem (Bucket) 来拿 key 和 value 的引用  
+    > VacantEntry 拿着 key 的所有权，VacantEntryRef 拿着 &Q，满足 `K: Borrow<Q>`，执行插入操作时要求 `K: From<&Q>`，所以 VacantEntryRef 只有在执行插入操作时才会克隆出一个key（如果into的实现是克隆），不执行插入操作的话成本比VacantEntry小，不过需要吊着&Q的命
+
 - `ska::flat_hash_map`
 
   [I Wrote The Fastest Hashtable | Probably Dance](https://probablydance.com/2017/02/26/i-wrote-the-fastest-hashtable/)

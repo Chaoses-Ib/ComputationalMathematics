@@ -7,6 +7,11 @@
 
 [The stable HashMap trap | More Stina Blog!](https://morestina.net/blog/1843/the-stable-hashmap-trap)
 
+[How to optimize really large hashmaps? : r/rust](https://www.reddit.com/r/rust/comments/z0mgfx/how_to_optimize_really_large_hashmaps/)
+- > High hash function quality implies perfect random distribution. Presumably, on large hashmaps, perfect random distribution implies an extremely high cache miss rate. To verify this assumption, I conducted a [benchmark](https://github.com/QuarticCat/hashbrown-benchmark), showing the huge impact of hashmap sizes on the performance.
+- > 以 size 作为 x 轴你会发现在超出三缓大小后延迟会急剧上升
+- Locality-sensitive hashes
+
 [dictionary - An efficient Map of elements with continuous integer keys in Java - Stack Overflow](https://stackoverflow.com/questions/55279761/an-efficient-map-of-elements-with-continuous-integer-keys-in-java)
 - [Sparse Arrays](../Sparse/Arrays.md)
 
@@ -52,13 +57,25 @@ Rust:
   ```
 
 ### Concurrent
+- [DLHT: A Non-blocking Resizable Hashtable with Fast Deletes and Memory-awareness](https://dl.acm.org/doi/10.1145/3625549.3658682)
+
+  > 粗略扫了一眼，直觉上在低竞争的情况下打不过 dashmap
+
 Rust:
 - [DashMap: Blazing fast concurrent HashMap for Rust.](https://github.com/xacrimon/dashmap)
+
+  > dashmap 很简单的，就 N 个 hashbrown ，每个上一个锁，用 hash value 来决定一个 key 分配到哪个 hashbrown 里
+
   - [Document single-threaded deadlock behavior - Issue #74 - xacrimon/dashmap](https://github.com/xacrimon/dashmap/issues/74)
   - [Document deadlock conditions - Issue #233 - xacrimon/dashmap](https://github.com/xacrimon/dashmap/issues/233)
 
     > **Locking behavior:** May deadlock if called when **the current thread is** holding any sort of reference into the map.
   - [Key-level guarantees - Issue #253 - xacrimon/dashmap](https://github.com/xacrimon/dashmap/issues/253)
+
+  Libraries:
+  - [waitmap](https://github.com/withoutboats/waitmap)
+
+    [waitmap - an async awaitable map](https://boats.gitlab.io/blog/post/waitmap/)
 
 - `HashMap<K, usize> + RwLock<Vec<V>>`
 
@@ -67,6 +84,13 @@ Rust:
   [papaya: a fast and ergonomic concurrent hash-table for read-heavy workloads : r/rust](https://www.reddit.com/r/rust/comments/1dzrz31/papaya_a_fast_and_ergonomic_concurrent_hashtable/)
 
   [Designing A Fast Concurrent Hash Table](https://ibraheem.ca/posts/designing-papaya/) ([r/rust](https://www.reddit.com/r/rust/comments/1g0g4ac/designing_a_fast_concurrent_hash_table), [Hacker News](https://news.ycombinator.com/item?id=41798475))
+
+- [scalable-concurrent-containers: High performance containers and utilities for concurrent and asynchronous programming](https://github.com/wvwwvwwv/scalable-concurrent-containers/)
+
+  [Choosing a concurrent map - wvwwvwwv/scalable-concurrent-containers - Discussion #113](https://github.com/wvwwvwwv/scalable-concurrent-containers/discussions/113#discussioncomment-7258390)
+  > 按照 scc 的作者的说法，如果负荷比较小，dashmap 更好，负荷大的话 scc 更好
+
+- [concurrent-map: lock-free B+ tree](https://github.com/komora-io/concurrent-map)
 
 - [Leapfrog: Lock-free concurrent and single-threaded hash map implementations using Leapfrog probing.](https://github.com/robclu/leapfrog)
 
@@ -108,6 +132,8 @@ Rust:
 
 - [cht: Lockfree resizeable concurrent hash table.](https://github.com/Gregory-Meyer/cht)
   - [moka-cht: Lock-free resizable concurrent hash table](https://github.com/moka-rs/moka-cht)
+
+- [folklore: A lock-less concurrent hash map](https://github.com/callumbirks/folklore/)
 
 [conc-map-bench](https://github.com/xacrimon/conc-map-bench)
 - [robclu/conc-map-bench: Fork of rust concurrent hash map bencmarks to include leapfrog map.](https://github.com/robclu/conc-map-bench)
