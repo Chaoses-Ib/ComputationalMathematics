@@ -66,6 +66,8 @@
   - Routing
     - [Travelling Salesman Problem](Algorithms/Graphs/Routing/TSP/README.md)
 
+- [Succinct Data Structures](Algorithms/Succinct/README.md)
+
 ## [Numerical Analysis](Numerical%20Analysis/README.md)
 - [Error Analysis](Numerical%20Analysis/Error%20Analysis/README.md)
 - [Order of Convergence](Numerical%20Analysis/Order%20of%20Convergence.md)
