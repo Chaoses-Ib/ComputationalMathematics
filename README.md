@@ -27,6 +27,7 @@
       - [Radix Sort](Algorithms/Sequences/Sorting/Integer/Radix.md) ([Python](Algorithms/Sequences/Sorting/Integer/Radix.ipynb))
   - [Merging](Algorithms/Sequences/Merging/README.md)
   - Search
+    - [Minimum](Algorithms/Sequences/Search/Minimum/README.md)
     - [Binary Search](Algorithms/Sequences/Search/Binary.md)
   - Substrings
     - [Search](Algorithms/Sequences/Substrings/Search/README.md)
