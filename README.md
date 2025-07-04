@@ -32,6 +32,7 @@
   - Substrings
     - [Search](Algorithms/Sequences/Substrings/Search/README.md)
     - [Longest Common Substrings](Algorithms/Sequences/Substrings/Common.md)
+    - [Longest Repeated Substring Problem](Algorithms/Sequences/Substrings/Repeat/README.md)
   - Subsequences
     - [Longest Common Subsequences](Algorithms/Sequences/Subsequences/Common.md)
 
@@ -47,6 +48,8 @@
     - [Threaded Binary Trees](Algorithms/Trees/Binary/Threaded.md)
   - [Tries](Algorithms/Trees/Tries/README.md)
     - [Hash Tries](Algorithms/Trees/Tries/Hash/README.md)
+    - [Suffix Trees](Algorithms/Trees/Tries/Suffix/README.md)
+      - [Suffix Arrays](Algorithms/Trees/Tries/Suffix/Arrays.md)
   - [Traversal](Algorithms/Trees/Traversal.md)
 
 - [Graphs](Algorithms/Graphs/README.md)

@@ -67,3 +67,7 @@ Time: $O(mn\log m)$, but in practice $O(n\log n)$ is rather expected.
 The edit distance when only insertion and deletion is allowed (no substitution), or when the cost of the substitution is the double of the cost of an insertion or  deletion, is:
 
 $$d'(X,Y) = n + m - 2 \cdot \left|LCS(X,Y)\right|.$$
+
+## Implementations
+### Rust
+- [d653/alcs: fuzzy substring for rust](https://github.com/d653/alcs)
