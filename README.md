@@ -31,6 +31,7 @@
     - [Binary Search](Algorithms/Sequences/Search/Binary.md)
   - Substrings
     - [Search](Algorithms/Sequences/Substrings/Search/README.md)
+      - [String-set-searching Algorithms](Algorithms/Sequences/Substrings/Search/Set.md)
     - [Longest Common Substrings](Algorithms/Sequences/Substrings/Common.md)
     - [Longest Repeated Substring Problem](Algorithms/Sequences/Substrings/Repeat/README.md)
   - Subsequences

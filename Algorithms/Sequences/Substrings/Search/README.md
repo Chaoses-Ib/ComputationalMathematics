@@ -1,11 +1,25 @@
 # String-searching Algorithms
+[Wikipedia](https://en.wikipedia.org/wiki/String-searching_algorithm)
+
 **String-searching algorithms (string-matching algorithms)** are an important class of string algorithms that try to find a place where one or several strings (also called patterns) are found within a larger string or text.[^wiki]
+
+- Naive
+- DFA-based
+- Stubs
+  - Knuth-Morris-Pratt
+  - Boyer-Moore
+  - Baeza–Yates
+- Index methods
+  - Suffix tree / suffix array
+- Fuzzy
+  - Trigram search
 
 [Exact String Matching Algorithms Animation in Java](http://www-igm.univ-mlv.fr/~lecroq/string/index.html)
 
 Algorithm | Preprocessing time | Matching time | Space
 --- | --- | --- | ---
 Naïve algorithm | none | Θ(mn) | none
+DFA | Θ(km) | Θ(n) | Θ(km)
 Rabin-Karp | Θ(m) | Θ(n) in average<br />O(mn) at worst | O(1)
 Knuth-Morris-Pratt | Θ(m) | Θ(n) | Θ(m)
 Boyer-Moore | Θ(m + k) | Ω(n/m) at best<br />O(mn) at worst | Θ(k)
@@ -13,6 +27,16 @@ Boyer-Moore-Horspool | | Θ(n) in average<br />O(mn) at worst
 Two-way algorithm | Θ(m) | O(n) | O(1)
 Backward Non-Deterministic DAWG Matching (BNDM) | O(m) | Ω(n/m) at best<br />O(mn) at worst 
 Backward Oracle Matching (BOM) | O(m) | O(mn)
+
+## Boyer-Moore
+[Wikipedia](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm)
+
+- Bad-character rule
+- Good-suffix rule
+
+## Unicode
+[crates for text searching ? : r/rust](https://www.reddit.com/r/rust/comments/1boo2fb/crates_for_text_searching/)
+> As far as I'm aware, there is no substring search algorithm that couples together the actual searching with something that is aware of these normal forms. It is for this reason that the typical way to go about this is to apply the same normalization to your needles and haystack before running the search.
 
 ## Libraries
 C:
@@ -104,6 +128,7 @@ Rust:
 
   [Memchr 2.4 now has an implementation of substring search on arbitrary bytes : rust](https://www.reddit.com/r/rust/comments/n3tfyx/memchr_24_now_has_an_implementation_of_substring/)
 - [sliceslice: A fast implementation of single-pattern substring search using SIMD acceleration.](https://github.com/cloudflare/sliceslice-rs)
+  - [Investigate performance differences with `memchr::memmem` implementation - Issue #40](https://github.com/cloudflare/sliceslice-rs/issues/40)
 - [twoway: Twoway / Fast substring search for strings and byte strings (Rust) / Also assorted benchmarks and string search snippets](https://github.com/bluss/twoway)
 
 ## Benchmarks
