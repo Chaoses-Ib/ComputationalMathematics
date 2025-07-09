@@ -11,7 +11,11 @@ Rust:
   - ASCII case insensitivity
     - ~~[Tracking issue for full-unicode case-insensitive matching - Issue #70](https://github.com/BurntSushi/aho-corasick/issues/70)~~
   - Much faster (-70%) than `regex` for literal string search
+  - [Feat Req: Making it easier to statically construct an AcAutomaton - Issue #9](https://github.com/BurntSushi/aho-corasick/issues/9)
+    - [Persist automaton to file such that it can be saved to disk and loaded back in memory - Issue #22](https://github.com/BurntSushi/aho-corasick/issues/22)
+      - [Serializing pre-built automaton - Issue #105](https://github.com/BurntSushi/aho-corasick/issues/105)
   - Used by regex
+- [daachorse: 🐎 A fast implementation of the Aho-Corasick algorithm using the compact double-array data structure in Rust.](https://github.com/daac-tools/daachorse)
 - [fuzzy-aho-corasick-rs: Fuzzy Aho---Corasick implemented in Rust](https://github.com/kakserpom/fuzzy-aho-corasick-rs) ([Docs.rs](https://docs.rs/fuzzy-aho-corasick/latest/fuzzy_aho_corasick/))
 
 ## Commentz-Walter algorithm
