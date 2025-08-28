@@ -17,6 +17,17 @@ A **data structure** is a collection of data values, the relationships among the
 - Introduction to Algorithms
 - The Art of Computer Programming (TAOCP)
 - [Algorithmica](https://en.algorithmica.org/)
+  - [Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/) ([GitHub](https://github.com/sslotin/amh-code))
+
+    > This is an upcoming high performance computing book titled "Algorithms for Modern Hardware" by [Sergey Slotin](http://sereja.me/).
+    > 
+    > Its intended audience is everyone from performance engineers and practical algorithm researchers to undergraduate computer science students who have just finished an advanced algorithms course and want to learn more practical ways to speed up a program than by going from $O(n\log ⁡n)$ to $O(n\log⁡\log ⁡n)$.
+
+    > Some binary search techniques beyond the textbook one - for better performance engineering. Branchless, cache friendly and other techniques ..
+
+    [Algorithms for Modern Hardware | Hacker News](https://news.ycombinator.com/item?id=39700809)
+
+- [Algorithms for Modern Processor Architectures](https://lemire.github.io/talks/2025/sea/sea2025.html) ([Hacker News](https://news.ycombinator.com/item?id=44653965))
 
 ## Competitive programming
 - [LeetCode - The World's Leading Online Programming Learning Platform](https://leetcode.com/) ([Wikipedia](https://en.wikipedia.org/wiki/LeetCode))
