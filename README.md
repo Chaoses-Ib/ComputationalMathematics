@@ -43,6 +43,7 @@
 - [Hash Tables](Algorithms/Hash/README.md)
   - [Seperate Chaining](Algorithms/Hash/Seperate%20Chaining.md)
   - [Open Addressing](Algorithms/Hash/Open%20Addressing.md)
+  - [Perfect Hashing](Algorithms/Hash/Perfect.md)
 
 - [Trees](Algorithms/Trees/README.md)
   - [Binary Trees](Algorithms/Trees/Binary/README.md)

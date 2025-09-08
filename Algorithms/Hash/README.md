@@ -36,6 +36,8 @@
 
 - Robin Hood hashing
 
+### [→Perfect hashing](Perfect.md)
+
 ## Implementations
 - [ ] Whole process hash table
 
@@ -179,9 +181,6 @@ Rust:
 
 - [linked-hash-map: A HashMap wrapper that holds key-value pairs in insertion order](https://github.com/contain-rs/linked-hash-map)
 
-### Perfect
+### On-disk
 Rust:
-- [Rust-PHF: Compile time static maps for Rust](https://github.com/rust-phf/rust-phf)
-
-C++:
-- [mph: C++20 \[Minimal\] Static Perfect Hash library](https://github.com/qlibs/mph)
+- [rust-lang/odht: An on-disk hash table implementation](https://github.com/rust-lang/odht)
