@@ -37,6 +37,10 @@
   - Subsequences
     - [Longest Common Subsequences](Algorithms/Sequences/Subsequences/Common.md)
 
+- [Ranges](Algorithms/Ranges/README.md)
+  - [Range Sets](Algorithms/Ranges/Sets.md)
+  - [Range Maps](Algorithms/Ranges/Maps.md)
+
 - [Sparse Matrices](Algorithms/Sparse/README.md)
   - [Sparse Arrays](Algorithms/Sparse/Arrays.md)
 
