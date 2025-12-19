@@ -3,6 +3,8 @@
 - [Integer Division](<Arithmetic/Integer Division.md>)
 - [Comparison](Arithmetic/Comparison.md)
 - [Floating-point Arithmetic](Arithmetic/Floating-point/README.md)
+  - [Base-10 (Decimal) Floating-point](Arithmetic/Floating-point/Base-10.typ)
+  - [Rounding](Arithmetic/Floating-point/Rounding.typ)
 - [Arbitrary-precision Arithmetic](Arithmetic/Arbitrary-precision/README.md)
 
 ## [Algorithms](Algorithms/README.md)
